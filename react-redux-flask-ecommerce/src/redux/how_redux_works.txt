@@ -1,0 +1,50 @@
+Action Creator -> Action -> dispatch -> Reducers -> Store
+
+You -> Booking Form -> Submit Form -> Ticker Counters -> Railway Central Store
+
+
+
+--------------------------------------------
+REDUX WITHOUT MIDDLEWARE
+
+         
+to change
+state we,
+invoke... ------------------> [Action Creator] ------------returns an object as...
+                                                                        |                                                                                                                 |
+                                                                        |
+ [State]                                                                |
+    ^                                                                [ACTION]
+    |                                                                   |
+    |                                                                   |
+Create new..                                                            |
+    |                                                                   |
+    |                                                                   |
+    |                                                                   |
+    |                                                                   V
+   [Reducer]       <---------------Forward the------------------[DISPATCH]
+                                      action to..
+                                      
+                                      
+                                      
+
+--------------------------------------------
+REDUX WITH MIDDLEWARE
+
+         
+to change
+state we,
+invoke... ------------------> [Action Creator] ------------returns an object as...
+                                                                        |                                                                                                                 |
+                                                                        |
+ [State]                                                                |
+    ^                                                                [ACTION]
+    |                                                                   |
+    |                                                                   |
+Create new..                                                            |
+    |                                                                   |
+    |                                                                   |
+    |                                                                   |
+    |                                                                   V
+   [Reducer] <------- [MIDDLEWARE]-------Forward the------------------[DISPATCH]
+            Send action to..          action to..
